@@ -108,6 +108,6 @@ if __name__ == "__main__":
     #             loss='sparse_categorical_crossentropy',
     #             metrics=['accuracy'])
 
-    history = model.fit(x_train, y_train, validation_split=0.10, epochs=200)
+    history = model.fit(x_train, y_train, validation_split=0.10, epochs=100)
     model.evaluate(x_test, y_test)
     visualize_history(history)
